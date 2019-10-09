@@ -6,11 +6,7 @@ addons:
   sonarcloud:
     organization: "miraculouswang"
     token:
-      secure: "0b38ff0dd83b32b1ef006632caf29673b8605f29"
-cache:
-  directories:
-    - '$HOME/.sonar/cache'
-    -
+      secure: "46d376ce5c019433b96e8ff7dfb55a05b830b57c"
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
   - sonar-scanner
