@@ -12,6 +12,7 @@ cache:
     - '$HOME/.sonar/cache'
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - cd /dapp-chain/side-chain/ && ./gradlew build -x test > /dev/null
   - sonar-scanner
 
 skip_build:
