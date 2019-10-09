@@ -9,6 +9,7 @@ addons:
       secure: "46d376ce5c019433b96e8ff7dfb55a05b830b57c"
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - cd dapp-chain/side-chain/ && ./gradlew build -x test
   - sonar-scanner
 
 skip_build:
